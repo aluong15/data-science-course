@@ -46,26 +46,27 @@ def divide(a,b):
     return a / b
 
  # request user input for numbers and arithmetic operation requested
-a = int(input("a: "))
-b = int(input("b: "))
-arithOperation = input("Arithmetic operation (addition, subtraction, multiplication, division): ")
+if __name__ == "__main__":
+    a = int(input("a: "))
+    b = int(input("b: "))
+    arithOperation = input("Arithmetic operation (addition, subtraction, multiplication, division): ")
 
-# print(type(a))
+    # print(type(a))
 
-#  # check that input parameters are of the expected data type
-# if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
-#     print("Error: Input values must be numbers")
+    #  # check that input parameters are of the expected data type
+    # if not (isinstance(a, (int, float)) and isinstance(b, (int, float))):
+    #     print("Error: Input values must be numbers")
 
-# if input parameters are valid, perform the arithmetic operation requested and return the result
-if arithOperation == "addition":
-    print(add(a,b))
-elif arithOperation == "subtraction":
-    print(subtract(a,b))
-elif arithOperation == "multiplication":
-    print(multiply(a,b))
-elif arithOperation == "division":
-    print(divide(a,b))
-else:
-    print("Invalid operation!")
+    # if input parameters are valid, perform the arithmetic operation requested and return the result
+    if arithOperation == "addition":
+        print(add(a,b))
+    elif arithOperation == "subtraction":
+        print(subtract(a,b))
+    elif arithOperation == "multiplication":
+        print(multiply(a,b))
+    elif arithOperation == "division":
+        print(divide(a,b))
+    else:
+        print("Invalid operation!")
 
 
