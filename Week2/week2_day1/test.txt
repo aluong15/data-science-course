@@ -1,0 +1,8 @@
+Hello, this is a sample text file.
+It contains multiple lines for testing purposes.
+Feel free to add or modify the content as needed.
+
+Python is a versatile programming language.
+It is widely used for web development, data analysis, artificial intelligence, and more.
+
+Have a great day!
