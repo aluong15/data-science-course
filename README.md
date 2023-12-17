@@ -6,6 +6,8 @@ This GitHub repository serves as a showcase of projects I've developed while lea
 
 In order to maintain a structured and systematic approach to my project, I have organized the files by week and day, reflecting a clear progression of tasks and milestones. In each week is a markdown file with the concepts and assignments along with a quiz for an assessment of the topics learned.
 
+A few people have reached out to my friend Troy regarding getting access to the learning outline/curriculum we developed using ChatGPT 4.0. For easy access, I've uploaded the learning outlines in one zip file "DataScience_learning_outline.zip". Please note that many of the video links are not working. In those cases, I searched for other videos explaining the concept described.
+
 ## Getting Started
 
 To run these applications, download the projects and navigate to the directory containing setup.py. Run "pip install -e ."
