@@ -19,7 +19,7 @@ class FileHandler:
     def read_tasks_from_file( self ):
         try:
             with open( self.filename, 'r' ) as f:
-                return list( map( lambda x: Task( **json.loads( x.strip("," + os.linesep) ) ), f.readlines() ) )
+                return [ Task( **json.loads( line.strip("," + os.linesep ) ) ) for line in f.readlines() ]
         except FileNotFoundError:
             print( "Error: File not found." )
         except json.JSONDecodeError:
@@ -29,7 +29,7 @@ class FileHandler:
     def write_tasks_to_file(self, tasks):
         try:
             with open( self.filename, 'w' ) as wf:
-                wf.write( ",\n".join( map( lambda x: json.dumps( vars( x ) ), tasks ) ) )
+                wf.write( ",\n".join( [ json.dumps( vars( task ) ) for task in tasks ] ) )
         except FileNotFoundError:
             print("Error: File not found.")
         except json.JSONDecodeError:
@@ -65,7 +65,7 @@ def main():
     #new_Task_Manager_1.save_tasks()
     print("List of current tasks: ")
     new_Task_Manager_1.list_tasks()
-    breakpoint()
+    # breakpoint()
     new_Task_Manager_1.mark_task_completed(1)
     print("Updated list.")
     new_Task_Manager_1.list_tasks()
